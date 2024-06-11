@@ -10,12 +10,13 @@ export const metadata: Metadata = {
   description: "App to create roles and authentications",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  //const user = await db.user.fin
+  //const user = await db.user.findMany()
+
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>

@@ -1,3 +1,6 @@
+//!This schema describes how must be every data and its kind of.
+//create one Obj (by form or data table), every attrb will be the field-form and field-table to validated
+
 import * as z from 'zod';
 
 export const LoginSchema = z.object({

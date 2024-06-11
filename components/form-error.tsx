@@ -5,7 +5,7 @@ interface FormErrorProps{
 }
 
 export const FormError = ({message}:FormErrorProps) =>{
-    if(!message) return null;
+    if(!message) return null; //!WITHOUT MSJ DONT RENDER IT
     return(
         <div 
         className='bg-destructive/15 p-3 rounded-md 
