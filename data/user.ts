@@ -11,6 +11,7 @@ export const getUserEmail =  async (email:string) =>{
 export const getUserId =  async (id:string) =>{
     try {
         const user = await db.user.findUnique({where:{id}})
+        return user
     } catch (err) {
         return null
     }
